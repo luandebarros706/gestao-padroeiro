@@ -35,6 +35,23 @@
       height: calc(100vh + 42px);
       border: 0;
     }
+    .lateral {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: max(0px, calc((100vw - 177.7778vh) / 2));
+  background: #071D3A;
+  z-index: 999999;
+  pointer-events: none;
+}
+
+.lateral-esquerda {
+  left: 0;
+}
+
+.lateral-direita {
+  right: 0;
+}
   </style>
 </head>
 
@@ -49,6 +66,7 @@
     allowfullscreen="true">
   </iframe>
 </div>
-
+<div class="lateral lateral-esquerda"></div>
+<div class="lateral lateral-direita"></div>
 </body>
 </html>
